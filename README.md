@@ -2,6 +2,7 @@
 To share the solution via GitHub, you can create a repository and upload a Python script or Jupyter notebook that utilizes a pre-trained language model (like GPT-4) to parse the resume text into the desired JSON format. 
 import json
 
+
 resume_text = """
 nithya sree s
 no.18/6 gandhimathi street vetri nagar extension
@@ -28,34 +29,34 @@ Skills:
             "web_development": ["HTML", "CSS", "JavaScript", "React"],
             "tools": ["Git", "Docker", "Kubernetes"]
 
-Projects:  
+Projects:
                 "name": "AI Chatbot for alumni engagement",
-                "description": "Developed a chatbot using Python and NLP techniques to assist with customer service inquiries." 
+                "description": "Developed a chatbot using Python and NLP techniques to assist with customer service inquiries."
                 "name": "drowsiness detection in traffic signals(reading eyes of the driver)
                 "description": "Developed a Machiene learning concept using CNN architecture."",
-            
+
 
 
 Certifications:{
                 "name": "design pattern",
-                "issuer": "university of alberta", 
+                "issuer": "university of alberta",
                 "name": "i/o pscychology"
                 "issuer": "coursera",
                 "name":"matlab"
                 "issuer":"MATLAB ON RAMP"
                 "name":"advanced excel"
-                "issuer":"SRMIST" 
+                "issuer":"SRMIST"
                 "name":"sql/plsql"
                 "issuer":"oracle academey"
                 "name":"data analytics"
                  "issuer":"accenture"
                  "name":"data mining with python"
                  "issuer":"infosys"
-            
-                
+
+
             }
         ]
-    }
+    }"""
 
 
 # Placeholder function to simulate parsing
@@ -86,36 +87,36 @@ def parse_resume_to_json(resume_text):
             }
         ],
         "skills": {
-            "programming_languages": ["Python", "Java", "C++",sql,matlab,uipath ,uipath automation,r language,linux],
+            "programming_languages": ["Python", "Java", "C++","sql","matlab","uipath" ,"uipath automation","r language","linux"],
             "web_development": ["HTML", "CSS", "JavaScript", "React"],
             "tools": ["Git", "Docker", "Kubernetes"]
         },
         "projects": [
             {
                 "name": "AI Chatbot for alumni engagement",
-                "description": "Developed a chatbot using Python and NLP techniques to assist with customer service inquiries." 
-                "name": "drowsiness detection in traffic signals(reading eyes of the driver)
-                "description": "Developed a Machiene learning concept using CNN architecture."",
+                "description": "Developed a chatbot using Python and NLP techniques to assist with customer service inquiries."
+                "name": "drowsiness detection in traffic signals(reading eyes of the driver)"
+                "description": "Developed a Machiene learning concept using CNN architecture.",
             }
         ],
         "certifications": [
             {
                 "name": "design pattern",
-                "issuer": "university of alberta", 
+                "issuer": "university of alberta",
                 "name": "i/o pscychology"
                 "issuer": "coursera",
                 "name":"matlab"
                 "issuer":"MATLAB ON RAMP"
                 "name":"advanced excel"
-                "issuer":"SRMIST" 
+                "issuer":"SRMIST"
                 "name":"sql/plsql"
                 "issuer":"oracle academey"
                 "name":"data analytics"
                  "issuer":"accenture"
                  "name":"data mining with python"
                  "issuer":"infosys"
-            
-                
+
+
             }
         ]
     }
@@ -125,4 +126,3 @@ resume_json = parse_resume_to_json(resume_text)
 
 # Print JSON output
 print(json.dumps(resume_json, indent=2))
-
